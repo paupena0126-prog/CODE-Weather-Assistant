@@ -6,7 +6,16 @@
 # "What is the temperature outside: "
 
 def main():
-    pass  # replace this line with your code
+    temperature = float(input("What is the temperature outside: "))
+    
+    celsius = (temperature - 32) * .5556
+
+    if celsius > 20:
+        print("\nWear a hat")
+    elif celsius > 10:
+        print("\nWear a light jacket")
+    else:
+        print("\nWear a heavy jacket")
 
 
 if __name__ == "__main__":
